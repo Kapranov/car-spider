@@ -1,13 +1,13 @@
 {
   "name": "site",
   "version": "1.0.0",
-  "description": "The crspdr site",
+  "description": "Car-spider client angular.js",
   "license": "UNLICENSED",
   "private": true,
-  "author": "Bram Borggreve <borggreve@gmail.com>",
+  "author": " ",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/beeman/crspdr-site.git"
+    "url": "git+ssh://git@github.com/kapranov/car-spider.git"
   },
   "scripts": {
     "test": "mocha test/unit/**/controllers/**/*.js",
@@ -24,15 +24,11 @@
   "dependencies": {
     "angular": "^1.4.4",
     "express": "^3.4.7",
-    "express-ping": "git+https://github.com/beeman/express-ping.git#master",
+    "express-ping": "git+https://github.com/palmerabollo/express-ping.git",
     "http-proxy": "0.10.4",
     "nodemon": "^1.4.1",
     "request": "^2.60.0"
   },
-  "bugs": {
-    "url": "https://github.com/beeman/crspdr-site/issues"
-  },
-  "homepage": "https://github.com/beeman/crspdr-site#readme",
   "devDependencies": {
     "angular-mocks": "^1.4.4",
     "chai": "^3.2.0",

@@ -1,13 +1,13 @@
 {
   "name": "api",
   "version": "1.0.0",
-  "description": "The crspdr api",
+  "description": "The car-spider api",
   "license": "All rights reserved",
   "private": true,
-  "author": "Bram Borggreve <borggreve@gmail.com>",
+  "author": " ",
   "repository": {
     "type": "git",
-    "url": "git@github.com:beeman/crspdr-api.git"
+    "url": "git@github.com:kapranov/car-spider.git"
   },
   "scripts": {
     "pretest": "jshint .",
@@ -25,7 +25,7 @@
     "cors": "2.7.1",
     "cron": "1.0.9",
     "errorhandler": "1.4.2",
-    "express-ping": "git+https://github.com/beeman/express-ping.git#master",
+    "express-ping": "git+https://github.com/palmerabollo/express-ping.git",
     "loopback": "2.20.0",
     "loopback-boot": "2.9.0",
     "loopback-datasource-juggler": "2.36.0",
