@@ -1,0 +1,47 @@
+<div class="row">
+  <div class="col-md-12">
+    <div class="input-group">
+      <input class="form-control input-xs" ng-model="ctrl.search" type="text" placeholder="Search" aria-describedby="basic-addon2">
+      <span class="input-group-addon" id="basic-addon2">Search</span>
+    </div>
+  </div>
+</div>
+
+<!--
+  <div class="row">
+    <div class="col-md-4 navbar-collapse collapse" ng-controller="ProductController">
+        <ul class="nav navbar-nav">
+          <li ng-controller="ProductController">
+            <label>
+              <select ui-select2 ng-model="product" ng-options="obj.id as obj.name for obj in product" data-placeholder="Chose products">
+                <option value=""></option>
+              </select>
+            </label>
+          </li>
+          <li><a style="width:1px"></a></li>
+          <li ng-controller="BrandController">
+            <label>
+              <select ui-select2 ng-model="brand" ng-options="obj.id as obj.name for obj in brand" data-placeholder="Chose brands">
+                <option value=""></option>
+              </select>
+            </label>
+          </li>
+        </ul>
+    </div>
+  </div>
+-->
+
+<br/>
+
+<div class="row">
+  <div class="col-md-4" ng-repeat="product in ctrl.products | filter: ctrl.search">
+    <cs-product product="product"></cs-product>
+  </div>
+</div>
+
+<div class="panel panel-default" ng-if="!ctrl.products.length">
+  <div class="panel-heading">Not found</div>
+  <div class="panel-body">
+    Content not found
+  </div>
+</div>

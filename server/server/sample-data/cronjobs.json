@@ -1,0 +1,58 @@
+[
+  {
+    "cronTime": "*/10 * * * * *",
+    "start": true,
+    "enabled": true,
+    "development": true,
+    "timeZone": "Europe/Amsterdam",
+    "task": "fetchData"
+  },
+  {
+    "cronTime": "*/15 * * * * *",
+    "start": true,
+    "enabled": true,
+    "development": true,
+    "timeZone": "Europe/Amsterdam",
+    "task": "cleanup"
+  },
+  {
+    "cronTime": "30 * * * * *",
+    "start": true,
+    "enabled": true,
+    "development": true,
+    "timeZone": "Europe/Amsterdam",
+    "task": "archive"
+  },
+  {
+    "cronTime": "* * * * * *",
+    "start": true,
+    "enabled": true,
+    "development": true,
+    "timeZone": "Europe/Amsterdam",
+    "task": "timer"
+  },
+  {
+    "cronTime": "1 * * * * *",
+    "start": true,
+    "enabled": true,
+    "development": true,
+    "timeZone": "Europe/Amsterdam",
+    "task": "fetchData"
+  },
+  {
+    "cronTime": "30 * * * * *",
+    "start": true,
+    "enabled": true,
+    "development": true,
+    "timeZone": "Europe/Amsterdam",
+    "task": "cleanup"
+  },
+  {
+    "cronTime": "45 0 * * * *",
+    "start": true,
+    "enabled": true,
+    "development": true,
+    "timeZone": "Europe/Amsterdam",
+    "task": "archive"
+  }
+]

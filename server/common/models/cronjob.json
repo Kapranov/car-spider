@@ -1,0 +1,32 @@
+{
+  "name": "Cronjob",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "string",
+      "required": true
+    },
+    "cronTime": {
+      "type": "string",
+      "required": true
+    },
+    "start": {
+      "type": "boolean",
+      "required": true
+    },
+    "timeZone": {
+      "type": "string"
+    },
+    "command": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

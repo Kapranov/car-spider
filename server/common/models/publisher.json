@@ -1,0 +1,48 @@
+{
+  "name": "Publisher",
+  "base": "PersistedModel",
+  "strict": "throw",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "persistUndefinedAsNull": true,
+  "mixins": {
+    "Paginate": {
+      "config": {
+        "limit": "10"
+      }
+    }
+  },
+  "properties": {
+    "id": {
+      "type": "string",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "string",
+      "required": true
+    },
+    "website": {
+      "type": "string",
+      "required": true
+    },
+    "endpoint": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "products": {
+      "type": "hasMany",
+      "model": "Product",
+      "foreignKey": "publisherId"
+    }
+  },
+  "acls": [],
+  "methods": []
+}

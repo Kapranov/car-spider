@@ -1,0 +1,46 @@
+{
+  "name": "site",
+  "version": "1.0.0",
+  "description": "The crspdr site",
+  "license": "UNLICENSED",
+  "private": true,
+  "author": "Bram Borggreve <borggreve@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/beeman/crspdr-site.git"
+  },
+  "scripts": {
+    "test": "mocha test/unit/**/controllers/**/*.js",
+    "jshint": "./node_modules/.bin/jshint src test",
+    "postinstall": "bower install",
+    "clean": "rm -r ./node_modules/ ; rm -r ./src/bower_components/",
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js --watch . --watch common --ext html,js,json",
+    "docker-build": "docker build -t crspdr/site .",
+    "docker-run": "docker run -d -p 10080:3000 crspdr/site",
+    "docker": "npm run docker-build && npm run docker-run"
+  },
+  "main": "src/server.js",
+  "dependencies": {
+    "angular": "^1.4.4",
+    "express": "^3.4.7",
+    "express-ping": "git+https://github.com/beeman/express-ping.git#master",
+    "http-proxy": "0.10.4",
+    "nodemon": "^1.4.1",
+    "request": "^2.60.0"
+  },
+  "bugs": {
+    "url": "https://github.com/beeman/crspdr-site/issues"
+  },
+  "homepage": "https://github.com/beeman/crspdr-site#readme",
+  "devDependencies": {
+    "angular-mocks": "^1.4.4",
+    "chai": "^3.2.0",
+    "chai-as-promised": "^5.1.0",
+    "jsdom": "^6.1.0",
+    "jshint": "^2.8.0",
+    "mocha": "^2.2.5",
+    "sinon": "^1.15.4",
+    "sinon-chai": "^2.8.0"
+  }
+}

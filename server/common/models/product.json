@@ -1,0 +1,70 @@
+{
+  "name": "Product",
+  "base": "PersistedModel",
+  "strict": "throw",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "persistUndefinedAsNull": true,
+  "mixins": {
+    "Paginate": {
+      "config": {
+        "limit": "10"
+      }
+    }
+  },
+  "properties": {
+    "id": {
+      "type": "string",
+      "required": true
+    },
+    "brandId": {
+      "type": "string"
+    },
+    "publisherId": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "type": "string",
+      "required": true
+    },
+    "price": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "default": "new"
+    },
+    "details": {
+      "type": "object"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "brand": {
+      "type": "belongsTo",
+      "model": "Brand",
+      "foreignKey": "brandId"
+    },
+    "publisher": {
+      "type": "belongsTo",
+      "model": "Publisher",
+      "foreignKey": "publisherId"
+    }
+  },
+  "acls": [],
+  "methods": []
+}

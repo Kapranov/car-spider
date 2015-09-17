@@ -1,0 +1,42 @@
+{
+  "name": "Brand",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "mixins": {
+    "Paginate": {
+      "config": {
+        "limit": "10"
+      }
+    }
+  },
+  "properties": {
+    "id": {
+      "type": "string",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "string",
+      "required": true
+    },
+    "alias": {
+      "type": "array"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "products": {
+      "type": "hasMany",
+      "model": "Product",
+      "foreignKey": "brandId"
+    }
+  },
+  "acls": [],
+  "methods": []
+}

@@ -1,0 +1,140 @@
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse" ng-controller="ProductController">
+            <ul class="nav navbar-nav">
+              <li><a href="" ui-sref="app.products.list">Products</a></li>
+              <li><a href="" ui-sref="app.brands.list">Brands</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="row">
+  <div class="col-xs-3">
+    <div id="accordion" class="panel-group">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Brand</a>
+          </h4>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse">
+          <div class="panel-body" ng-controller="BrandController">
+            <!--
+              <select ui-select2 ng-model="brand" ng-options="obj.id as obj.name for obj in brand" data-placeholder="Chose brands" style="width:230px">
+                <option value=""></option>
+              </select>
+            -->
+            <select ui-select2 ng-model="select2" data-placeholder="Chose brands" style="width:230px">
+              <option value=""></option>
+              <option ng-repeat="p in brand" value="{{p.id}}">{{p.name}}</option>
+            </select>
+            <hr/>
+            <table>
+              <tr ng-repeat="c in brand">
+                <td>
+                  <a ui-sref="app.brands.view({ brandId: c.id })">{{c.name}}</a>
+                </td>
+              </tr>
+            </table>
+            <hr/>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Price</a>
+          </h4>
+        </div>
+        <div id="collapseTwo" class="panel-collapse collapse">
+          <div class="panel-body">
+            <label for="pcs">Price:</label>
+            <input type="number" min="0" ng-model="product.price" size="20" id="pcs" />
+            <input type="range" ng-model="product.price" min="1" max="100">
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Year</a>
+          </h4>
+        </div>
+        <div id="collapseThree" class="panel-collapse collapse">
+          <div class="panel-body">
+            <select ui-select2 ng-model="select2" data-placeholder="Chose Year" style="width:150px">
+              <option value=""></option>
+              <option ng-repeat="item in items | limitTo:yearLimit">{{item}}</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">Milage</a>
+          </h4>
+        </div>
+        <div id="collapseFour" class="panel-collapse collapse">
+          <div class="panel-body">
+            <p>Two free number fields (min/max)</p>
+            <div range-slider min="0" max="100" model-min="min" model-max="max"></div>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">Transmission</a>
+          </h4>
+        </div>
+        <div id="collapseFive" class="panel-collapse collapse">
+          <div class="panel-body">
+            <p>A select box with the options automatic and manual.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!--
+      <a href="#" class="list-group-item">Brand</a>
+      <a href="#" class="list-group-item">Model</a>
+      <a href="#" class="list-group-item">Price</a>
+      <a href="#" class="list-group-item">Year</a>
+      <a href="#" class="list-group-item">Milage</a>
+      <a href="#" class="list-group-item">Transmission</a>
+      <li ng-controller="ProductController">
+        <label>
+          <select ui-select2 ng-model="product" ng-options="obj.id as obj.name for obj in product" data-placeholder="Chose products">
+            <option value=""></option>
+          </select>
+        </label>
+        </li>
+    -->
+  </div>
+  <div class="col-xs-9">
+    <ui-view autoscroll='true'></ui-view>
+  </div>
+</div>
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+    </div>
+</nav>

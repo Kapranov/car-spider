@@ -1,0 +1,28 @@
+<div class="productpanel panel panel-default">
+    <div class="panel-heading">
+        {{product.name | limitTo: 50}}
+        <span ng-if="product.description != product.name">{{product.description}}</span>
+    </div>
+    <!--<div class="panel-body">-->
+        <!--<div class="text-center">-->
+            <a href="{{product.url}}">
+                <img ng-src="{{product.image}}" alt="{{product.text}}" style="width: 100%;"/>
+            </a>
+        <!--</div>-->
+    <!--</div>-->
+    <div class="panel-footer">
+        <span class="text-muted">{{product.publisher.name}}</span>
+        &middot;
+        <span class="text-muted">
+            <a href="" ui-sref="app.brands.view({brandId: product.brand.id})">
+                {{product.brand.name}}
+            </a>
+        </span>
+
+        <span class="pull-right">
+          <a href="{{product.url}}">
+              {{product.price | limitTo: 40}}
+          </a>
+        </span>
+    </div>
+</div>

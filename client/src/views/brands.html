@@ -1,0 +1,34 @@
+
+<div class="form-group">
+    <input class="form-control input-lg" ng-model="ctrl.search" type="text" placeholder="Search">
+</div>
+
+<div class="row">
+    <div class="col-md-6" ng-repeat="brand in ctrl.brands | filter:ctrl.search">
+        <div class="brandpanel panel panel-default">
+            <div class="panel-heading">
+                <a href="" ui-sref="app.brands.view({brandId: brand.id})">
+                    {{brand.name | limitTo: 50}}
+                </a>
+            </div>
+            <table class="table table-bordered">
+                <tr ng-repeat="product in brand.products">
+                    <td>
+                        <a href="" ui-sref="app.products.view({productId: product.id})">
+                            {{product.name}}
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<div class="panel panel-default" ng-if="!ctrl.brands.length">
+    <div class="panel-heading">Not found</div>
+    <div class="panel-body">
+        Content not found
+    </div>
+</div>
+

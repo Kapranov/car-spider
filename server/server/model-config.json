@@ -1,0 +1,49 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ]
+  },
+  "User": {
+    "dataSource": "db"
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Product": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Publisher": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Brand": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Cronjob": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Maintenance": {
+    "dataSource": null,
+    "public": true
+  }
+}

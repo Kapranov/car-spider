@@ -1,0 +1,19 @@
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #eaeaea;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+.carpanel .panel-body {
+  min-height: 290px;
+}
+.carpanel .panel-heading {
+  font-weight: bold;
+}
+
+a {
+  color: #e72532;
+}

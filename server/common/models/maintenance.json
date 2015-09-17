@@ -1,0 +1,29 @@
+{
+  "name": "Maintenance",
+  "plural": "Maintenance",
+  "base": "Model",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {
+    "fetch": {
+      "description": "Fetch the content",
+      "isStatic": true,
+      "accepts": [],
+      "returns": {
+        "arg": "status",
+        "type": "Object",
+        "root": true
+      },
+      "http": {
+        "path": "/fetch",
+        "verb": "get"
+      }
+    }
+  }
+}

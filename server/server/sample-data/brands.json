@@ -1,0 +1,179 @@
+[
+  {
+    "id": 1,
+    "name": "Aston Martin",
+    "slug": "aston-martin"
+  },
+  {
+    "id": 2,
+    "name": "Audi",
+    "slug": "audi"
+  },
+  {
+    "id": 3,
+    "name": "Bentley",
+    "slug": "bentley"
+  },
+  {
+    "id": 4,
+    "name": "BMW",
+    "slug": "bmw"
+  },
+  {
+    "id": 5,
+    "name": "Bugatti",
+    "slug": "bugatti"
+  },
+  {
+    "id": 6,
+    "name": "Daimler",
+    "slug": "daimler"
+  },
+  {
+    "id": 7,
+    "name": "De Tomaso",
+    "slug": "de-tomaso"
+  },
+  {
+    "id": 8,
+    "name": "Delorean",
+    "slug": "delorean"
+  },
+  {
+    "id": 9,
+    "name": "Dodge",
+    "slug": "dodge"
+  },
+  {
+    "id": 10,
+    "name": "Donkervoort",
+    "slug": "donkervoort"
+  },
+  {
+    "id": 11,
+    "name": "Ferrari",
+    "slug": "ferrari"
+  },
+  {
+    "id": 12,
+    "name": "Hummer",
+    "slug": "hummer"
+  },
+  {
+    "id": 13,
+    "name": "Infiniti",
+    "slug": "infiniti"
+  },
+  {
+    "id": 14,
+    "name": "Jaguar",
+    "slug": "jaguar"
+  },
+  {
+    "id": 15,
+    "name": "Jeep",
+    "slug": "jeep"
+  },
+  {
+    "id": 16,
+    "name": "Jensen",
+    "slug": "jensen"
+  },
+  {
+    "id": 17,
+    "name": "Lamborghini",
+    "slug": "lamborghini"
+  },
+  {
+    "id": 18,
+    "name": "Lancia",
+    "slug": "lancia"
+  },
+  {
+    "id": 19,
+    "name": "Land Rover",
+    "slug": "land-rover",
+    "alias": [
+      "Land Rover",
+      "land-rover",
+      "Range Rover",
+      "Range R",
+      "Discovery"
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Lexus",
+    "slug": "lexus"
+  },
+  {
+    "id": 21,
+    "name": "Lotus",
+    "slug": "lotus"
+  },
+  {
+    "id": 22,
+    "name": "Marcos",
+    "slug": "marcos"
+  },
+  {
+    "id": 23,
+    "name": "Maserati",
+    "slug": "maserati"
+  },
+  {
+    "id": 24,
+    "name": "Maybach",
+    "slug": "maybach"
+  },
+  {
+    "id": 25,
+    "name": "Mega",
+    "slug": "mega"
+  },
+  {
+    "id": 26,
+    "name": "Mercedes-Benz",
+    "slug": "mercedes-benz"
+  },
+  {
+    "id": 27,
+    "name": "MG",
+    "slug": "mg"
+  },
+  {
+    "id": 28,
+    "name": "Morgan",
+    "slug": "morgan"
+  },
+  {
+    "id": 29,
+    "name": "Noble",
+    "slug": "noble"
+  },
+  {
+    "id": 30,
+    "name": "Panther",
+    "slug": "panther"
+  },
+  {
+    "id": 31,
+    "name": "Porsche",
+    "slug": "porsche"
+  },
+  {
+    "id": 32,
+    "name": "Rolls-Royce",
+    "slug": "rolls-royce"
+  },
+  {
+    "id": 33,
+    "name": "Spyker",
+    "slug": "spyker"
+  },
+  {
+    "id": 34,
+    "name": "TVR",
+    "slug": "tvr"
+  }
+]

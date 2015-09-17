@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "snellers.nl",
+    "slug": "snellers",
+    "website": "http://www.snellers.nl/",
+    "endpoint": "http://www.snellers.nl/occasions-snellers.html"
+  },
+  {
+    "id": 2,
+    "name": "firstgearcars.nl",
+    "slug": "firstgearcars",
+    "website": "http://www.firstgearcars.nl",
+    "endpoint": "http://www.firstgearcars.nl/exclusieveautos/"
+  },
+  {
+    "id": 3,
+    "name": "prinsesclusivo.nl",
+    "slug": "prinsesclusivo",
+    "website": "http://www.prinsesclusivo.nl",
+    "endpoint": "http://www.prinsesclusivo.nl/aanbod/"
+  },
+  {
+    "id": 4,
+    "name": "vdmauto.nl",
+    "slug": "vdmauto",
+    "website": "http://www.vdmauto.nl",
+    "endpoint": ""
+  },
+  {
+    "id": 5,
+    "name": "hoefnagels.nu",
+    "slug": "hoefnagels",
+    "website": "http://www.hoefnagels.nu",
+    "endpoint": ""
+  },
+  {
+    "id": 6,
+    "name": "rijtautos.nl",
+    "slug": "rijtautos",
+    "website": "http://www.rijtautos.nl",
+    "endpoint": ""
+  },
+  {
+    "id": 7,
+    "name": "jhcars.eu",
+    "slug": "jhcars",
+    "website": "http://www.jhcars.eu",
+    "endpoint": ""
+  },
+  {
+    "id": 8,
+    "name": "akker.nl",
+    "slug": "akker",
+    "website": "http://www.akker.nl",
+    "endpoint": ""
+  }
+]
