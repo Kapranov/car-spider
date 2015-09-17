@@ -1,7 +1,7 @@
 README
 ------
 
-Application Node.js plus Angular.js
+Application API and client Angular.js
 
 server:
  * npm install --save-dev
